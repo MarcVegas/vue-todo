@@ -8,20 +8,18 @@
 </template>
 
 <script>
-import {v4 as uuid} from 'uuid'
 
 export default {
     name: 'AddTodo',
     data() {
         return {
-            
+            title: ''
         }
     },
     methods: {
         addTodo(e) {
             e.preventDefault()
             const newItem = {
-                id: uuid(),
                 title: this.title,
                 completed: false
             }
